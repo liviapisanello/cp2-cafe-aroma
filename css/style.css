@@ -10,7 +10,8 @@ body {
 }
 
 .radio-slide,
-.check-cardapio {
+.check-cardapio,
+.check-video {
   display: none;
 }
 
@@ -297,5 +298,61 @@ body {
 }
 
 #abrir-cardapio:checked ~ .modal-cardapio {
+  display: flex;
+}
+
+.modal-video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.caixa-video {
+  width: 650px;
+  height: 365px;
+  background-color: #111;
+  border: 2px solid #d6a328;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.caixa-video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #000;
+}
+
+.fechar-video {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fechar-video:hover {
+  color: #d6a328;
+}
+
+#abrir-video:checked ~ .modal-video {
   display: flex;
 }

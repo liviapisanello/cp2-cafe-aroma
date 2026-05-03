@@ -14,6 +14,7 @@
 <body>
 
   <input type="checkbox" id="abrir-cardapio" class="check-cardapio">
+  <input type="checkbox" id="abrir-video" class="check-video">
 
   <section class="hero">
 
@@ -40,10 +41,10 @@
         <div class="botoes">
           <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
 
-          <a href="#" class="botao botao-video">
+          <label for="abrir-video" class="botao botao-video">
             <span class="icone-play">&#9654;</span>
             Assista ao vídeo
-          </a>
+          </label>
         </div>
       </div>
     </div>
@@ -67,10 +68,10 @@
         <div class="botoes">
           <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
 
-          <a href="#" class="botao botao-video">
+          <label for="abrir-video" class="botao botao-video">
             <span class="icone-play">&#9654;</span>
             Assista ao vídeo
-          </a>
+          </label>
         </div>
       </div>
     </div>
@@ -94,10 +95,10 @@
         <div class="botoes">
           <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
 
-          <a href="#" class="botao botao-video">
+          <label for="abrir-video" class="botao botao-video">
             <span class="icone-play">&#9654;</span>
             Assista ao vídeo
-          </a>
+          </label>
         </div>
       </div>
     </div>
@@ -113,6 +114,17 @@
     <div class="modal-cardapio">
       <label for="abrir-cardapio" class="fechar-cardapio">X</label>
       <img src="imagens/Cardapio.png" alt="Cardápio da cafeteria">
+    </div>
+
+    <div class="modal-video">
+        <div class="caixa-video">
+        <label for="abrir-video" class="fechar-video">X</label>
+
+        <video controls autoplay muted>
+            <source src="videos/cafe-aroma.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        </div>
     </div>
 
 </body>
