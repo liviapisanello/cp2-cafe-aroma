@@ -9,6 +9,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.radio-slide {
+  display: none;
+}
+
 .hero {
   width: 100%;
   height: 320px;
@@ -23,10 +27,65 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .slide-1 {
   background-image: url("../imagens/cafe-principal.jpg");
+}
+
+.slide-2 {
+  background-image: url("../imagens/cafe-2.jpg");
+}
+
+.slide-3 {
+  background-image: url("../imagens/cafe-3.jpg");
+}
+
+#s1:checked ~ .slide-1,
+#s2:checked ~ .slide-2,
+#s3:checked ~ .slide-3 {
+  animation-name: primeiro;
+}
+
+#s1:checked ~ .slide-2,
+#s2:checked ~ .slide-3,
+#s3:checked ~ .slide-1 {
+  animation-name: segundo;
+}
+
+#s1:checked ~ .slide-3,
+#s2:checked ~ .slide-1,
+#s3:checked ~ .slide-2 {
+  animation-name: terceiro;
+}
+
+@keyframes primeiro {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  30% { opacity: 1; }
+  38% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes segundo {
+  0% { opacity: 0; }
+  33% { opacity: 0; }
+  41% { opacity: 1; }
+  63% { opacity: 1; }
+  71% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes terceiro {
+  0% { opacity: 0; }
+  66% { opacity: 0; }
+  74% { opacity: 1; }
+  92% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .escuro {
@@ -133,4 +192,72 @@ body {
 .descricao::selection {
   background-color: #d6a328;
   color: black;
+}
+
+.indicadores {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.bolinha {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bolinha:hover {
+  background-color: #d6a328;
+}
+
+#s1:checked ~ .indicadores .bolinha-1,
+#s2:checked ~ .indicadores .bolinha-2,
+#s3:checked ~ .indicadores .bolinha-3 {
+  animation-name: bolinhaPrimeira;
+}
+
+#s1:checked ~ .indicadores .bolinha-2,
+#s2:checked ~ .indicadores .bolinha-3,
+#s3:checked ~ .indicadores .bolinha-1 {
+  animation-name: bolinhaSegunda;
+}
+
+#s1:checked ~ .indicadores .bolinha-3,
+#s2:checked ~ .indicadores .bolinha-1,
+#s3:checked ~ .indicadores .bolinha-2 {
+  animation-name: bolinhaTerceira;
+}
+
+@keyframes bolinhaPrimeira {
+  0% { background-color: white; }
+  8% { background-color: #d6a328; }
+  30% { background-color: #d6a328; }
+  38% { background-color: white; }
+  100% { background-color: white; }
+}
+
+@keyframes bolinhaSegunda {
+  0% { background-color: white; }
+  33% { background-color: white; }
+  41% { background-color: #d6a328; }
+  63% { background-color: #d6a328; }
+  71% { background-color: white; }
+  100% { background-color: white; }
+}
+
+@keyframes bolinhaTerceira {
+  0% { background-color: white; }
+  66% { background-color: white; }
+  74% { background-color: #d6a328; }
+  92% { background-color: #d6a328; }
+  100% { background-color: white; }
 }
