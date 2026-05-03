@@ -1,131 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Café Aroma</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Aroma</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="abrir-cardapio" class="check-cardapio" />
+    <input type="checkbox" id="abrir-video" class="check-video" />
 
-  <input type="checkbox" id="abrir-cardapio" class="check-cardapio">
-  <input type="checkbox" id="abrir-video" class="check-video">
+    <section class="hero">
+      <input type="radio" name="slide" id="s1" class="radio-slide" checked />
+      <input type="radio" name="slide" id="s2" class="radio-slide" />
+      <input type="radio" name="slide" id="s3" class="radio-slide" />
 
-  <section class="hero">
+      <div class="slide slide-1">
+        <div class="escuro"></div>
 
-    <input type="radio" name="slide" id="s1" class="radio-slide" checked>
-    <input type="radio" name="slide" id="s2" class="radio-slide">
-    <input type="radio" name="slide" id="s3" class="radio-slide">
+        <div class="conteudo">
+          <p class="subtitulo">Mais que café,</p>
 
-    <div class="slide slide-1">
-      <div class="escuro"></div>
+          <h1>
+            Uma pausa<br />
+            <span>para você.</span>
+          </h1>
 
-      <div class="conteudo">
-        <p class="subtitulo">Mais que café,</p>
+          <p class="descricao">
+            Cafés especiais, momentos únicos e<br />
+            o sabor que transforma o seu dia.
+          </p>
 
-        <h1>
-          Uma pausa<br>
-          <span>para você.</span>
-        </h1>
+          <div class="botoes">
+            <label for="abrir-cardapio" class="botao botao-cardapio"
+              >Acessar o cardápio</label
+            >
 
-        <p class="descricao">
-          Cafés especiais, momentos únicos e<br>
-          o sabor que transforma o seu dia.
-        </p>
-
-        <div class="botoes">
-          <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
-
-          <label for="abrir-video" class="botao botao-video">
-            <span class="icone-play">&#9654;</span>
-            Assista ao vídeo
-          </label>
+            <label for="abrir-video" class="botao botao-video">
+              <span class="icone-play">&#9654;</span>
+              Assista ao vídeo
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="slide slide-2">
-      <div class="escuro"></div>
+      <div class="slide slide-2">
+        <div class="escuro"></div>
 
-      <div class="conteudo">
-        <p class="subtitulo">Ambiente único,</p>
+        <div class="conteudo">
+          <p class="subtitulo">Ambiente único,</p>
 
-        <h1>
-          Feito com<br>
-          <span>paixão.</span>
-        </h1>
+          <h1>
+            Feito com<br />
+            <span>paixão.</span>
+          </h1>
 
-        <p class="descricao">
-          Um espaço pensado para você<br>
-          relaxar e aproveitar cada momento.
-        </p>
+          <p class="descricao">
+            Um espaço pensado para você<br />
+            relaxar e aproveitar cada momento.
+          </p>
 
-        <div class="botoes">
-          <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
+          <div class="botoes">
+            <label for="abrir-cardapio" class="botao botao-cardapio"
+              >Acessar o cardápio</label
+            >
 
-          <label for="abrir-video" class="botao botao-video">
-            <span class="icone-play">&#9654;</span>
-            Assista ao vídeo
-          </label>
+            <label for="abrir-video" class="botao botao-video">
+              <span class="icone-play">&#9654;</span>
+              Assista ao vídeo
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="slide slide-3">
-      <div class="escuro"></div>
+      <div class="slide slide-3">
+        <div class="escuro"></div>
 
-      <div class="conteudo">
-        <p class="subtitulo">Sabores especiais,</p>
+        <div class="conteudo">
+          <p class="subtitulo">Sabores especiais,</p>
 
-        <h1>
-          Grãos<br>
-          <span>selecionados.</span>
-        </h1>
+          <h1>
+            Grãos<br />
+            <span>selecionados.</span>
+          </h1>
 
-        <p class="descricao">
-          Do campo à sua xícara,<br>
-          qualidade em cada detalhe.
-        </p>
+          <p class="descricao">
+            Do campo à sua xícara,<br />
+            qualidade em cada detalhe.
+          </p>
 
-        <div class="botoes">
-          <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
+          <div class="botoes">
+            <label for="abrir-cardapio" class="botao botao-cardapio"
+              >Acessar o cardápio</label
+            >
 
-          <label for="abrir-video" class="botao botao-video">
-            <span class="icone-play">&#9654;</span>
-            Assista ao vídeo
-          </label>
+            <label for="abrir-video" class="botao botao-video">
+              <span class="icone-play">&#9654;</span>
+              Assista ao vídeo
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="indicadores">
-      <label for="s1" class="bolinha bolinha-1"></label>
-      <label for="s2" class="bolinha bolinha-2"></label>
-      <label for="s3" class="bolinha bolinha-3"></label>
-    </div>
+      <div class="indicadores">
+        <label for="s1" class="bolinha bolinha-1"></label>
+        <label for="s2" class="bolinha bolinha-2"></label>
+        <label for="s3" class="bolinha bolinha-3"></label>
+      </div>
+    </section>
 
-  </section>
-   
+    <section class="sobre-nos">
+      <div class="container-sobre">
+        <div class="sobre-conteudo">
+          <p class="subtitulo-sobre">Sobre Nós</p>
+          <h2>
+            Feito com <span>paixão</span>,<br />servido com
+            <span>carinho</span>.
+          </h2>
+
+          <p class="texto-descricao">
+            <span class="capitular">A</span> Café Aroma nasceu do sonho de criar
+            um lugar acolhedor, onde cada detalhe faz você se sentir em casa.
+            Nossos grãos são selecionados com cuidado e preparados para
+            proporcionar experiências incríveis.
+          </p>
+
+          <div class="icones-diferenciais">
+            <div class="item-icone">
+              <img src="imagens/icone-graos.png" alt="Grãos" />
+              <p>Grãos<br />selecionados</p>
+            </div>
+            <div class="item-icone">
+              <img src="imagens/icone-xicara-de-cafe.png" alt="Preparo" />
+              <p>Preparo<br />artesanal</p>
+            </div>
+            <div class="item-icone">
+              <img src="imagens/icone-amor.png" alt="Amor" />
+              <p>Feito com<br />amor</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-imagem-container">
+          <div class="decoracao-pontilhada"></div>
+          <div class="moldura-foto">
+            <img
+              src="imagens/cafeteria-sobre-nos.png"
+              alt="Interior da Cafeteria"
+              class="foto-principal"
+            />
+            <div class="selo-qualidade">
+              <img src="imagens/icone-grao.png" alt="Selo" class="icone-selo" />
+              <h4>Qualidade em cada xícara</h4>
+              <img
+                src="imagens/icone-coracao.png"
+                alt="Selo"
+                class="icone-selo"
+              />
+            </div>
+          </div>
+          <div class="decoracao-folha"></div>
+        </div>
+      </div>
+    </section>
+
     <div class="modal-cardapio">
       <label for="abrir-cardapio" class="fechar-cardapio">X</label>
-      <img src="imagens/Cardapio.png" alt="Cardápio da cafeteria">
+      <img src="imagens/Cardapio.png" alt="Cardápio da cafeteria" />
     </div>
 
     <div class="modal-video">
-        <div class="caixa-video">
+      <div class="caixa-video">
         <label for="abrir-video" class="fechar-video">X</label>
 
         <video controls autoplay muted>
-            <source src="videos/cafe-aroma.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo.
+          <source src="videos/cafe-aroma.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
         </video>
-        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
