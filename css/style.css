@@ -548,3 +548,20 @@ body {
   background-size: 10px 10px;
   z-index: 1;
 }
+
+.icones-diferenciais {
+  display: flex;
+  gap: 30px;
+}
+
+.item-icone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-icone p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #444;
+}
