@@ -9,7 +9,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.radio-slide {
+.radio-slide,
+.check-cardapio {
   display: none;
 }
 
@@ -260,4 +261,41 @@ body {
   74% { background-color: #d6a328; }
   92% { background-color: #d6a328; }
   100% { background-color: white; }
+}
+
+.modal-cardapio {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-cardapio img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.fechar-cardapio {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fechar-cardapio:hover {
+  color: #d6a328;
+}
+
+#abrir-cardapio:checked ~ .modal-cardapio {
+  display: flex;
 }

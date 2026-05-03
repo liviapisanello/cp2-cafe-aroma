@@ -13,6 +13,8 @@
 </head>
 <body>
 
+  <input type="checkbox" id="abrir-cardapio" class="check-cardapio">
+
   <section class="hero">
 
     <input type="radio" name="slide" id="s1" class="radio-slide" checked>
@@ -36,7 +38,7 @@
         </p>
 
         <div class="botoes">
-          <a href="#" class="botao botao-cardapio">Acessar o cardápio</a>
+          <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
 
           <a href="#" class="botao botao-video">
             <span class="icone-play">&#9654;</span>
@@ -63,7 +65,7 @@
         </p>
 
         <div class="botoes">
-          <a href="#" class="botao botao-cardapio">Acessar o cardápio</a>
+          <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
 
           <a href="#" class="botao botao-video">
             <span class="icone-play">&#9654;</span>
@@ -90,7 +92,7 @@
         </p>
 
         <div class="botoes">
-          <a href="#" class="botao botao-cardapio">Acessar o cardápio</a>
+          <label for="abrir-cardapio" class="botao botao-cardapio">Acessar o cardápio</label>
 
           <a href="#" class="botao botao-video">
             <span class="icone-play">&#9654;</span>
@@ -101,14 +103,17 @@
     </div>
 
     <div class="indicadores">
-
       <label for="s1" class="bolinha bolinha-1"></label>
       <label for="s2" class="bolinha bolinha-2"></label>
       <label for="s3" class="bolinha bolinha-3"></label>
-      
     </div>
 
   </section>
+   
+    <div class="modal-cardapio">
+      <label for="abrir-cardapio" class="fechar-cardapio">X</label>
+      <img src="imagens/Cardapio.png" alt="Cardápio da cafeteria">
+    </div>
 
 </body>
 </html>
