@@ -9,6 +9,74 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* HEADER */
+#cabecalho-principal {
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #1a120b;  
+    padding: 20px 8%;
+    color: #f5ebe0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img{
+    height: 80px;
+}
+
+.logo-texto {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4a373; 
+}
+
+.lista-navegacao {
+    display: flex;
+    list-style: none; 
+    gap: 25px;       
+}
+
+
+.link-nav {
+    text-decoration: none;
+    color: #f5ebe0;
+    transition: 0.3s;
+}
+
+.link-nav:hover {
+    color: #d4a373; 
+}
+
+.botao-pedido {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #d4a373;
+    color: #1a120b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+
+.botao-pedido:hover {
+    background-color: #b3865a;
+    transform: scale(1.05); 
+}
+
+.botao-pedido:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
+
 .radio-slide,
 .check-cardapio,
 .check-video {
