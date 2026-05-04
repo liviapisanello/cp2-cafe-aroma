@@ -638,11 +638,12 @@ body {
 
 body {
   font-family: Arial, sans-serif;
-  background: #f3efe9;
+  background: #EDE4D6;
 }
 /* SECTION */
 .carrossel {
   text-align: center;
+  font-family: "Lato", sans-serif;
   padding: 40px;
 }
 
