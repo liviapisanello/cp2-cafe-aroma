@@ -13,7 +13,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* HEADER */
 #cabecalho-principal {
     display: flex;             
     justify-content: space-between; 
@@ -640,8 +639,6 @@ body {
 
 
 
-/*LARA*/
-
 body {
   font-family: 'Lato', sans-serif; 
   background: #F2E9DE;
@@ -691,7 +688,7 @@ body {
 }
 
 .cards::-webkit-scrollbar {
-  display: none; /
+  display: none;
 }
 
 
@@ -1013,22 +1010,21 @@ body {
     }
 }
 
-/* --- FOOTER --- */
 #rodape-principal {
     background-color: #1a120b;
     color: #f5ebe0;
-    padding: 50px 8%;
+    padding: 20px 8%;
 }
 
 .container-footer {
     display: flex;
-    justify-content: space-around; /* Distribui as colunas de forma igual */
-    flex-wrap: wrap;              /* Permite quebrar linha em telas menores */
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .coluna-footer {
-    flex: 1;                /* Faz as colunas terem tamanhos similares */
+    flex: 1;
     min-width: 200px;
     position: relative;
 }
@@ -1089,7 +1085,6 @@ body {
     text-decoration: underline;
 }
 
-/* --- ITENS DE CONTATO COM ÍCONES --- */
 .item-contato {
     display: flex;
     align-items: center;
