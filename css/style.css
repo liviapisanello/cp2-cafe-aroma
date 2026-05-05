@@ -772,3 +772,94 @@ body {
 
 .esquerda { left: -20px; }
 .direita { right: -20px; }
+
+
+/* --- FOOTER --- */
+#rodape-principal {
+    background-color: #1a120b;
+    color: #f5ebe0;
+    padding: 50px 8%;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around; /* Distribui as colunas de forma igual */
+    flex-wrap: wrap;              /* Permite quebrar linha em telas menores */
+    gap: 30px;
+}
+
+.coluna-footer {
+    flex: 1;                /* Faz as colunas terem tamanhos similares */
+    min-width: 200px;
+    position: relative;
+}
+
+.coluna-footer:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 0;
+    width: 1px;
+    background-color: #3c2a21;
+}
+
+.titulo-footer {
+    color: #d4a373;
+    margin-bottom: 15px;
+}
+
+.subtitulo-footer {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+.redes-sociais img{
+    height: 20px;
+    margin-top: 10px;
+}
+
+.lista-footer {
+    list-style: none;
+}
+
+
+.lista-footer li {
+    margin-bottom: 8px;
+}
+
+.lista-footer a {
+    color: #f5ebe0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.lista-footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- ITENS DE CONTATO COM ÍCONES --- */
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.icone-contato {
+    height: 20px;
+    width: 20px;
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
