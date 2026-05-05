@@ -773,6 +773,83 @@ body {
 .esquerda { left: -20px; }
 .direita { right: -20px; }
 
+.nossos-servicos {
+    background-color: #2b1408; 
+    padding: 20px 80px;
+    padding-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+ 
+.subtitulo-servicos {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;             
+    margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+ 
+.linha-servicos {
+    width: 40px;
+    height: 2px;
+    background-color: #d7a35d;
+    margin: 0 auto 40px auto;  
+}
+ 
+.servicos-box {
+    display: flex;              
+    align-items: center;         
+    justify-content: center;
+    margin-top: -25px;
+    gap: 10px;             
+    max-width: 1300px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+
+.item-servico {
+    display: flex;               
+    align-items: flex-start;     
+    gap: 15px;                   
+    flex: 1;                     
+    padding: 0 15px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+ 
+.item-servico:hover {
+    transform: translateY(-5px);
+}
+ 
+.icone-servico i {
+    font-size: 50px;
+    color: #d7a35d;
+    flex-shrink: 0;
+}
+ 
+.texto-servico h3 {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+ 
+.texto-servico p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.80);
+}
+ 
+.divisor-vertical {
+    width: 2px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.15);
+    flex-shrink: 0;
+}
+
 
 /* --- FOOTER --- */
 #rodape-principal {
