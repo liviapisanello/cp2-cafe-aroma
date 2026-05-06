@@ -14,12 +14,17 @@ body {
 }
 
 #cabecalho-principal {
-    display: flex;             
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: #1a120b;  
+    background-color: #1a120b;
     padding: 20px 8%;
     color: #f5ebe0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -91,6 +96,7 @@ body {
   height: 320px;
   position: relative;
   overflow: hidden;
+  margin-top: 120px;
 }
 
 .slide {
@@ -778,8 +784,7 @@ body {
 
 .nossos-servicos {
     background-color: #2b1408; 
-    padding: 20px 80px;
-    padding-bottom: 40px;
+    padding: 80px 0;
     color: white;
     text-align: center;
 }
@@ -855,8 +860,7 @@ body {
 
 .depoimentos {
     background-color: #fcfaf7;
-    padding-top: 70px;
-    padding-bottom: 18px;
+    padding: 140px 0 70px 0;
     text-align: center;
 }
  
@@ -891,7 +895,6 @@ body {
     gap: 80px;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: -40px;
 }
  
 .card {
@@ -1098,4 +1101,13 @@ body {
     height: 20px;
     width: 20px;
     flex-shrink: 0;
+}
+
+#inicio,
+#sobre,
+#cardapio,
+#nossos-servicos,
+#depoimentos,
+#contato {
+  scroll-margin-top: 120px;
 }
