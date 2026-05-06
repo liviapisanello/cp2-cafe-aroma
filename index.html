@@ -205,7 +205,7 @@
   <h2>Nossos favoritos</h2>
 
   <div class="container">
-    <a href="#card1" class="seta esquerda">&#10094;</a>
+    <button class="seta esquerda" type="button">&#10094;</button>
     
 
     <div class="cards">
@@ -283,7 +283,7 @@
 
     </div>
 
-    <a href="#card6" class="seta direita">&#10095;</a>
+    <button class="seta direita" type="button">&#10095;</button>
   </div>
 </section>
 
@@ -467,6 +467,19 @@
         </div>
     </footer>
 
+<script>
+  const cards = document.querySelector(".cards");
+  const esquerda = document.querySelector(".esquerda");
+  const direita = document.querySelector(".direita");
+
+  esquerda.onclick = function () {
+    cards.scrollLeft = cards.scrollLeft - 300;
+  };
+
+  direita.onclick = function () {
+    cards.scrollLeft = cards.scrollLeft + 300;
+  };
+</script>
 
   </body>
 </html>

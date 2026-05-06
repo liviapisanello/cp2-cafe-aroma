@@ -765,6 +765,8 @@ body {
   top: 50%;
   transform: translateY(-50%);
   transition: opacity 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
 .seta:hover {
