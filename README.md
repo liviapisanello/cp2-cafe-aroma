@@ -23,21 +23,17 @@ Dessa forma, o projeto une conceitos de design e desenvolvimento.
 
 ---
 
-## 👥 Autores do projeto
-
-- Livía Pisanello  
-- Luca Baccari dos Santos  
-- Gustavo Pereira Inoue  
-- Rafael Dias Fontes  
-- Lara Beatriz de Souza Lima  
-
----
 
 ## 🚀 Tecnologias utilizadas
 
 - HTML5  
 - CSS3  
 - Git & GitHub  
+
+---
+
+## 📸 Preview do Projeto
+![Preview](./imagens/preview.png)
 
 ---
 
@@ -55,6 +51,15 @@ Além disso, foram aplicadas boas práticas de versionamento, como:
 - Uso de branches para desenvolvimento de features  
 - Commits padronizados (`feat`, `fix`, etc.)  
 - Integração via Pull Requests  
+
+---
+## 👥 Autores do projeto
+
+- Livía Pisanello  
+- Luca Baccari dos Santos  
+- Gustavo Pereira Inoue  
+- Rafael Dias Fontes  
+- Lara Beatriz de Souza Lima  
 
 ---
 
