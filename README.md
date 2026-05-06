@@ -43,6 +43,7 @@ O projeto segue o padrão apresentado em aula, contendo a seguinte estrutura:
 ./Projeto
 ./css
 ./imagens
+./videos
 integrantes.txt
 index.html
 
