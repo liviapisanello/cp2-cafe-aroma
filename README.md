@@ -64,6 +64,9 @@ Além disso, foram aplicadas boas práticas de versionamento, como:
 
 ---
 
+## 🔗 Github Pages
+https://liviapisanello.github.io/cp2-cafe-aroma/#inicio
+
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins acadêmicos.
